@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhigu Kala | Premium Helmet Scarf</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="JKLogo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="JKLogo.png" alt="Logo" height="60" width="60">
+                    <h1>Jhigu_Kala</h1>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">Helmet Scarfs</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#contact">Order Now</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-buttons">
+                    <!--<a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>-->
+                    <a href="#products" class="btn primary-btn">View Products</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Jhigu_Kala</h1>
+            <p>Ride in Safety, Wrap in Comfort</p>
+            <a href="#products" class="btn primary-btn">
+                Explore Our Scarfs <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+
+
+<!-- Products Section -->
+<section id="products" class="products section-padding">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Scarf Collection</h2>
+      <div class="divider"></div>
+      <p>Discover our selection of high-quality helmet scarfs</p>
+    </div>
+
+    <!-- NEW: Scrollable Product Wrapper -->
+    <div class="products-container">
+      <!-- Scroll Left Button -->
+      <button class="scroll-btn left" onclick="scrollProducts('left')">&#10094;</button>
+
+      <!-- Scrollable Grid -->
+<div class="products-grid" id="productsGrid">
+
+<!-- Tea Product 1 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="Viscose Rayon- Blue Mis Floral.jpg" alt="Golden Tea">
+    </div>
+    <div class="product-details">
+        <h3>Viscose Rayon - Blue Mis Floral</h3>
+        <h4>Rs.400</h4>
+        <p>Lightweight and smooth viscose rayon scarf with a unique blue mixed floral pattern for a trendy finish.</p>
+
+        <!-- Quantity and Proceed -->
+        <div class="product-actions">
+            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+            <input type="text" value="0" class="qty-input" readonly>
+            <button class="qty-btn" onclick="increaseQty(this)">+</button>
+            <button class="proceed-btn">Proceed</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tea Product 2 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="Viscose Rayon- Blue Red Floral.jpg" alt="Silver Tea">
+    </div>
+    <div class="product-details">
+        <h3>Viscose Rayon - Blue Red Floral</h3>
+        <h4>Rs.400</h4>
+        <p>A soft viscose rayon scarf showcasing a bold blend of blue and red floral prints for a vibrant look.</p>
+        
+        <!-- Quantity and Proceed -->
+        <div class="product-actions">
+            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+            <input type="text" value="0" class="qty-input" readonly>
+            <button class="qty-btn" onclick="increaseQty(this)">+</button>
+            <button class="proceed-btn">Proceed</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tea Product 3 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="Viscose Rayon- Green Floral.jpg" alt="Silver Needle Tea">
+    </div>
+    <div class="product-details">
+        <h3>Viscose Rayon - Green Floral</h3>
+        <h4>Rs.400</h4>
+        <p>Comfortable and breezy viscose rayon scarf with a refreshing green floral design for nature-inspired elegance.</p>
+        
+        <!-- Quantity and Proceed -->
+        <div class="product-actions">
+            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+            <input type="text" value="0" class="qty-input" readonly>
+            <button class="qty-btn" onclick="increaseQty(this)">+</button>
+            <button class="proceed-btn">Proceed</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tea Product 4 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="Viscose Rayon-Daisy.jpg" alt="Golden Needle Tea">
+    </div>
+    <div class="product-details">
+        <h3>Viscose Rayon - Daisy</h3>
+        <h4>Rs.400</h4>
+        <p>Stylish and airy viscose rayon scarf adorned with charming daisy prints for a cheerful everyday vibe.</p>
+        
+        <!-- Quantity and Proceed -->
+        <div class="product-actions">
+            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+            <input type="text" value="0" class="qty-input" readonly>
+            <button class="qty-btn" onclick="increaseQty(this)">+</button>
+            <button class="proceed-btn">Proceed</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tea Product 5 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="Viscose Rayon-Pink floral.jpg" alt="Jasmine Tea">
+    </div>
+    <div class="product-details">
+        <h3>Viscose Rayon - Pink Floral</h3>
+        <h4>Rs.400</h4>
+        <p>Lightweight viscose rayon scarf featuring a delicate pink floral print for a feminine and fresh appeal.</p>
+        
+        <!-- Quantity and Proceed -->
+        <div class="product-actions">
+            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+            <input type="text" value="0" class="qty-input" readonly>
+            <button class="qty-btn" onclick="increaseQty(this)">+</button>
+            <button class="proceed-btn">Proceed</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tea Product 6 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="Viscose Rayon-White mandala .jpg" alt="Jasmine Flower Tea">
+    </div>
+    <div class="product-details">
+        <h3>Viscose Rayon - White Mandala </h3>
+        <h4>Rs.400</h4>
+        <p>Soft and breathable viscose rayon helmet scarf with an elegant white mandala print for a boho-chic look.</p>
+        
+        <!-- Quantity and Proceed -->
+        <div class="product-actions">
+            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+            <input type="text" value="0" class="qty-input" readonly>
+            <button class="qty-btn" onclick="increaseQty(this)">+</button>
+            <button class="proceed-btn">Proceed</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tea Product 7 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="Silk - Leopard.jpg" alt="Jasmine Flower Tea">
+    </div>
+    <div class="product-details">
+        <h3>Silk - Leopard </h3>
+        <h4>Rs.450</h4>
+        <p>Luxuriously smooth silk scarf with a classic leopard print, perfect for a bold and stylish statement.</p>
+        
+        <!-- Quantity and Proceed -->
+        <div class="product-actions">
+            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+            <input type="text" value="0" class="qty-input" readonly>
+            <button class="qty-btn" onclick="increaseQty(this)">+</button>
+            <button class="proceed-btn">Proceed</button>
+        </div>
+    </div>
+</div>
+
+      <!-- Scroll Right Button -->
+      <button class="scroll-btn right" onclick="scrollProducts('right')">&#10095;</button>
+    </div>
+
+    <!--<div class="text-center mt-2">
+      <a href="#" class="btn outline-btn">View All Products (Beta)</a>
+    </div>-->
+  </div>
+</section>
+
+ <!-- About Section -->
+    <section id="about" class="about section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>The Beginning of Jhigu_Kala</h3>
+                    <p>It was the second phase of lockdown. Three teenagers, stuck at home, wanted to do something meaningful. One of us suggested starting a small business from home, and another noticed the growing trend of scrunchies online. Inspired, we met the next day, planned everything, and launched our brand <b>Jhigu_Kala </b>on <b>December 19, 2020.</b></p>
+
+                      <p>We began by selling to family and friends. The response was good at first but slowly declined. That’s when we came up with a new idea, helmet scarfs we personally needed and believed other rider girls would too.</p>
+
+                        <p>Since then, we’ve been selling helmet scarfs across and beyond the Kathmandu Valley, turning a lockdown idea into a lasting venture.</p>
+                </div>
+                <div class="about-image">
+                    <img src="monkey.jpg" alt="Founders">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tea Experience Section
+    <section class="experience section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet the Co-Founders</h2>
+                <div class="divider"></div>
+            </div>
+  <div class="cards-container">
+    <!-- Card 1 
+    <div class="profile-card">
+      <img src="Kritima.jpg" alt="Founder 1">
+      <h2>Kritima Maharjan</h2>
+      <p class="position">Co-founder, Jhigu_Kala <!--</br> Product and Business Development, Laxmi Sunrise Bank</p>
+      <div class="social-iconss">
+        <a href="https://www.facebook.com/kritima.maharjan.10" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/krii.maharjan/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/kritima-maharjan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="description">
+        Jane brings over 15 years of leadership experience in tech startups and focuses on driving innovation and team culture.
+      </p>
+    </div>
+
+    <!-- Card 2 
+    <div class="profile-card">
+      <img src="malli.png" alt="Founder 2">
+      <h2>Mallika Amatya</h2>
+      <p class="position">Co-founder, Jhigu_Kala <!--</br> Digital Marketing Associate, </br> Classic Tech</p>
+      <div class="social-iconss">
+        <a href="https://www.facebook.com/Mallika127" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/__mallikaamatya__/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mallika-amatya-2bab6018b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="description">
+        John leads the tech strategy with a passion for AI and scalable systems, ensuring seamless product development.
+      </p>
+    </div>
+
+    <!-- Card 3 
+    <div class="profile-card">
+      <img src="smriti.jpg" alt="Founder 3">
+      <h2>Smriti Maharjan</h2>
+      <p class="position">Co-founder, Jhigu_Kala <!--</br> SEO-Digital Marketing Analyst, Searchable Design</p>
+      <div class="social-iconss">
+        <a href="https://www.facebook.com/smritimaharjann" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/_smritimaharjan/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/smriti-maharjan-/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://maharjan-smriti.com.np/" target="_blank"><i class="fas fa-globe"></i></a>
+
+      </div>
+      <p class="description">
+        Co-founder of Jhigu Kala, leading our brainstorming, production, and product development. By day, I’m also an SEO and digital marketing analyst, turning ideas into impact.
+      </p>
+    </div>
+  </div>
+        </div>
+    </section>-->
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">P</div>
+                        <div class="testimonial-info">
+                            <h4>Prabrity Basnet</h4>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div class=testimonial-details>
+                    <p>"I loved the quality of product and the packaging was aslo eco-friendly, keep up the good work."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">S</div>
+                        <div class="testimonial-info">
+                            <h4>Smita Thapa</h4>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"I bought a helmet scarf mask. Mask is too comfortable and feels easy to wear. Can used in a daily basis. Love it!"</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">K</div>
+                        <div class="testimonial-info">
+                            <h4>Kalpana Shrestha</h4>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Excellent service and quick response! The scarf fits in my pocket and is super convenient for travel. No hassle like shawls, perfect for everyday use. Highly recommended!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Information Section -->
+    <section id="contact" class="shop-info section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Send Us Your Order</h2>
+                <div class="divider"></div>
+            </div>
+ <form id="orderForm" novalidate>
+      <!-- Row 1 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name<span>*</span></label>
+          <input type="text" id="name" name="name" required />
+          <div class="error" id="nameError"></div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number<span>*</span></label>
+          <input type="tel" id="phone" name="phone" pattern="^[0-9]{7,15}$" required />
+          <div class="error" id="phoneError"></div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email Address<span>*</span></label>
+          <input type="email" id="email" name="email" required />
+          <div class="error" id="emailError"></div>
+        </div>
+        <div class="form-group">
+          <label for="address">Shipping Address<span>*</span></label>
+            <input type="text" id="address" name="address" required />
+          <div class="error" id="addressError"></div>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="form-row">
+<div class="form-group">
+  <label>Product / Order Details <span>*</span></label>
+  <div id="productRows"></div>
+  <div class="error" id="productError"></div>
+</div>
+
+      </div>
+
+      <!-- Row 4 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="payment">Payment Method<span>*</span></label>
+          <select id="payment" name="payment" required>
+            <option value="">-- Select --</option>
+            <option value="COD">Cash on Delivery</option>
+            <option value="e-sewa">E-Sewa</option>
+          </select>
+          <div class="error" id="paymentError"></div>
+        </div>
+        <div class="form-group">
+          <label for="notes">Order Notes (Optional)</label>
+        <input type="text" id="notes" name="notes" />
+        </div>
+      </div>    
+      <p class="delivery-note">
+  Delivery charge: Inside Ringroad – Rs.100, Outside Ringroad or Outside Valley – Rs.150
+</p>
+ <div class="form-actions">
+  <button type="submit">Submit Order</button>
+  <button type="reset" id="clearBtn">Clear</button>
+</div>
+    </form>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jhigu_Kala</h3>
+                    <p>Ride Bold, Wrap Safety.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/scrunchie1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/jhigu_kala/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@jhigu_kala" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="mailto:jhigukala@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+
+
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">Helmet Scarfs</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#contact">Order Now</a></li>
+                        <!--<li><a href="#contact">Contact</a></li>-->
+                    </ul>
+                </div>
+                <div class="footer-column">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Jhigu_Kala. <a href="https://www.shrestha-amar.com.np/" target="_blank">All rights reserved.</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
