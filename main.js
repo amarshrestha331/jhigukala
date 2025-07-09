@@ -265,6 +265,12 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(() => {
         alert("Order submitted successfully!");
 
+        
+    // ✅ Show QR popup if payment method is E-Sewa
+    if (payment.toLowerCase() === 'e-sewa') {
+      showEsewaQR();
+    }
+
         // Reset form & product rows
         orderForm.reset();
         productRows.innerHTML = "";
@@ -275,6 +281,30 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+function showEsewaQR() {
+  const qrPopup = document.createElement("div");
+  qrPopup.style.position = "fixed";
+  qrPopup.style.top = "50%";
+  qrPopup.style.left = "50%";
+  qrPopup.style.transform = "translate(-50%, -50%)";
+  qrPopup.style.background = "#fff";
+  qrPopup.style.padding = "20px";
+  qrPopup.style.boxShadow = "0 0 15px rgba(0,0,0,0.3)";
+  qrPopup.style.zIndex = "9999";
+  qrPopup.style.textAlign = "center";
+  qrPopup.innerHTML = `
+    <div style="text-align: right;">
+      <span style="cursor: pointer; font-size: 18px; font-weight: bold;" onclick="this.closest('div').remove()">×</span>
+    </div>
+    <h3 style="margin: 10px 0;">Pay with E-Sewa</h3>
+    <p>Scan the QR code below to pay:</p>
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <img src="esewa.jpg" alt="E-Sewa QR" style="width:200px;height:auto;">
+    </div>
+  `;
+  document.body.appendChild(qrPopup);
+}
 
 // Mobile menu toggle (optional)
 document.addEventListener('DOMContentLoaded', function () {
@@ -287,3 +317,36 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById("productsGrid");
+    const cardWidth = 320; // width + gap
+    let scrollAmount = cardWidth;
+    let isJumping = false;
+
+    window.scrollProducts = function(direction) {
+      if (isJumping) return;
+
+      const step = direction === 'left' ? -scrollAmount : scrollAmount;
+      container.scrollBy({ left: step, behavior: 'smooth' });
+
+      setTimeout(() => {
+        // After scroll, check position
+        const totalCards = container.querySelectorAll('.product-card').length;
+        const totalWidth = cardWidth * totalCards;
+        const maxScrollLeft = totalWidth - cardWidth * numClones;
+
+        if (direction === 'right' && container.scrollLeft >= maxScrollLeft - cardWidth) {
+          isJumping = true;
+          container.scrollLeft = cardWidth * numClones;
+          setTimeout(() => { isJumping = false; }, 100);
+        }
+
+        if (direction === 'left' && container.scrollLeft <= 0) {
+          isJumping = true;
+          container.scrollLeft = totalWidth - cardWidth * (numClones * 2);
+          setTimeout(() => { isJumping = false; }, 100);
+        }
+      }, 400);
+    };
+  });
