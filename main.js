@@ -296,7 +296,7 @@ function showEsewaQR() {
   qrPopup.innerHTML = `
     <h3>Pay with E-Sewa</h3>
     <p>Scan the QR code below to pay:</p>
-    <img src="YOUR_QR_IMAGE_URL_HERE" alt="E-Sewa QR" style="width:200px;height:auto;margin: 0;">
+    <img src="esewa.jpg" alt="E-Sewa QR" style="width:200px;height:auto;margin: 0;">
     <br>
     <button onclick="this.parentElement.remove()" style="padding: 6px 12px; margin-top: 10px;">Close</button>
   `;
