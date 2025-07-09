@@ -294,14 +294,11 @@ function showEsewaQR() {
   qrPopup.style.zIndex = "9999";
   qrPopup.style.textAlign = "center";
   qrPopup.innerHTML = `
-    <div style="text-align: right;">
-      <span style="cursor: pointer; font-size: 18px; font-weight: bold;" onclick="this.closest('div').remove()">×</span>
-    </div>
-    <h3 style="margin: 10px 0;">Pay with E-Sewa</h3>
+    <h3>Pay with E-Sewa</h3>
     <p>Scan the QR code below to pay:</p>
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <img src="esewa.jpg" alt="E-Sewa QR" style="width:200px;height:auto;">
-    </div>
+    <img src="YOUR_QR_IMAGE_URL_HERE" alt="E-Sewa QR" style="width:200px;height:auto;margin: 0;">
+    <br>
+    <button onclick="this.parentElement.remove()" style="padding: 6px 12px; margin-top: 10px;">Close</button>
   `;
   document.body.appendChild(qrPopup);
 }
